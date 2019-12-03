@@ -1,0 +1,730 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WG會員平台歡迎您</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!--自定義圖片確認表單特效-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/radiocheck.min.css" />
+    <!--共用CDN-->
+    <!--Bootstrap core CSS  v4.1.1-->
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!--Bootstrap core CSS  v3.3.7-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="stylesheets/style-bs3.css">
+
+
+    <!--共用CSS-->
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/sprite-icon-ui.css" />
+    <!-- ico 圖示-->
+    <link href="images/common/favicon.ico" rel="shortcut icon" />
+</head>
+
+<body class="left-sidebar">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="clear-loading loading-effect-2"> <span></span> </div>
+    </div>
+
+    <!-- Header -->
+    <!-- Header Div 未登入 start-->
+    <header id="header" class="header header-sticky">
+        <!--固定頂部位置 CSS class header-sticky-->
+        <div class="header-wrap ">
+            <div class="header-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-sm-2 col-lg-2 col-xs-8"> <a href="index.html" rel="home"><img src="images/icon/logo-red.svg" class="logo-fix" /></a> </div>
+                        <!--手機版選單 開始-->
+                        <div class=" col-sm-10 col-lg-10 col-xs-4" align="right">
+                            <div class="btn-menu"></div>
+                            <nav id="mainnav" class="mainnav">
+                                <ul class="menu">
+                                    <!--已登入 -->
+                                    <li class="visible-xs visible-sm red"><a href="payment-step1.html">儲值</a></li>
+                                    <li class="cs"><a href="faq.html">客服中心</a> </li>
+                                    <li class="news"><a href="news-list.html">最新消息</a> </li>
+                                    <li class="taskli"><a href="task-home.html">平台任務</a> </li>
+                                    <li class="pointshop"><a href="shop-list.html">紅利商城</a> </li>
+                                    <li class="games"><a href="game-center.html">遊戲大廳</a> </li>
+                                    <li class="visible-xs"><a href="login.html">會員專區</a></li>
+                                    <!--登入之後的按鈕-->
+                                    <li class="member mega hidden-xs hidden-sm "><a href="edit-account.html">會員
+                                            <!-- 有提示時顯示下面資料訊 開始-->
+
+                                            <!-- 有提示時顯示下面資料訊 結束-->
+                                        </a></li>
+                                    <li class="hidden-xs payment"><a href="payment-step1.html"> 儲值 </a> </li>
+                                    <!--登入之後的按鈕 結束-->
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!--MEGA 下拉顯示DIV 開始 狀況說明 : 只有登入會員之後才會出現此區塊 -->
+                <div class="mega-wrap hidden-xs">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-2"> <img src="images/icon/member-v0-unknow.png" class="img-circle member-svg" /> </div>
+                            <div class="col-sm-4">
+                                <p class="text-white"> 12345678978abc , 您好</p>
+                                <div class="task__text member-task"> 會員等級: <span class="text-yellow"> 超級會員</span> <br />
+                                    紅利點數 : <span class="text-yellow"> 123456 </span> <i class="wg-ui wg-red-point-small"></i> <a href="about-red-point.html" class="btn btn-xs  btn-black"><i class="fa fa-question-circle"></i> 紅利說明 </a></div>
+                                <br />
+                                <span class="text-white"> （最近紅利到期日：2017/08/28） </span>
+                            </div>
+                            <div class="col-sm-2">
+                                <div>
+                                    <ul>
+                                        <!--狀況說明 : 提示資料大於1-9筆-->
+                                        <li><a href="edit-account.html">會員專區 </a></li>
+                                        <!--狀況說明 : 等級不足時出現的情況-->
+                                        <li><a href="binding.html" DATA-TOGGLE="tooltip" DATA-PLACEMENT="top" title="綁定會員帳號即可開通">儲值紀錄 <i class="wg-ui wg-lock"></i> </a> </li>
+                                        <!--狀況說明 : 提示資料大於10筆以上-->
+                                        <li><a href="game-log.html">遊戲履歷 <span class="circle">9+</span> </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div>
+                                    <ul>
+                                        <li><a href="point-list-get.html">紅利紀錄 </a></li>
+                                        <li><a href="request-list.html">客服紀錄 <span class="circle">9+</span> </a></li>
+                                        <li><a href="frined-binding.html">邀請好友 </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div>
+                                    <ul>
+                                        <li><a href="logout.html">會員登出</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header Div 未登入 End -->
+    <!-- /.header -->
+
+    <!--內容區開始-->
+    <!-- 麵包屑 開始-->
+    <section class="breadcrumb-wrap hidden-xs">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"> <i class="wegames-title wegames-cs-list"></i><br>
+                    <ul class="breadcrumb hidden-xs">
+                        <li><a href="index.html">首頁</a></li>
+                        <li class="last"><a href="request-list.html">客服紀錄</a></li>
+                        <li class="last"><a href="request-detail.html">提問資料</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 麵包屑 結束-->
+
+    <section class="page-wrap">
+        <div class="container">
+            <div class="row ">
+                <div class="col-sm-12">
+                    <div class="col-sm-12 visible-xs">
+                        <div class="col-lg-12 pd10 mgb20 user-info-dash">
+                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                <p class="text-white"> 12345678978abc , 您好</p>
+                                <div class="task__text member-task">
+                                    <p>會員等級: <span class="text-yellow"> 超級會員</span> <br />
+                                        紅利點數 : <span class="text-yellow"> 123456 </span> <br>
+                                        紅利到期日 : <span class="text-yellow"> 2017/08/28 </span> </p>
+                                </div>
+                                <br>
+                                <a href="about-red-point.html" class="btn btn-xs btn-info"><i class="fa fa-question-circle"></i> 紅利說明 </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="edit-account.html#main"><span class="icon-wrap navi-member"></span></a>
+                            <p align="center">會員專區</p>
+                        </div>
+                        <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="game-log.html#main"><span class="icon-wrap navi-gamelog"> </span></a>
+                            <p align="center">遊戲履歷</p>
+                        </div>
+                        <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="payment-list.html#main"><span class="icon-wrap navi-payment"></span></a>
+                            <p align="center">儲值紀錄</p>
+                        </div>
+                        <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="point-list-get.html#main"> <span class="icon-wrap navi-reppoint"> </span></a>
+                            <p align="center">紅利紀錄 <span class="circle-gray circle-dash">9+</span> </p>
+                        </div>
+                        <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="request-list.html#main"><span class="icon-wrap navi-cs"></span></a>
+                            <p align="center">客服紀錄 <span class="circle-gray circle-dash">9+</span> </p>
+                        </div>
+                        <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="frined-binding.html#main"><span class="icon-wrap navi-invite"> </span></a>
+                            <p align="center">邀請好友 <span class="circle-gray circle-dash">9+</span> </p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    <!--修正結尾-->
+
+                    <div class="col-sm-12" id="main">
+                        <div class="col-sm-3 col-lg-2 sidebar-nav hidden-xs">
+                            <ul>
+                                <li><a href="edit-account.html">會員專區 </a></li>
+                                <li><a href="game-log.html"> 遊戲履歷 </a></li>
+                                <li><a href="payment-list.html"> 儲值紀錄 </a></li>
+                                <li><a href="point-list-get.html"> 紅利紀錄 </a></li>
+                                <li><a class="active" href="request-list.html"> 客服紀錄 </a></li>
+                                <li><a href="frined-binding.html"> 邀請好友 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-9 col-lg-10 col-xs-12">
+                            <!--驗證資料區塊開始-->
+                            <div class="col-sm-12 pd20">
+
+                                <!-- 提問內容種類-->
+                                <div class="col-sm-12">
+                                    <!--該資料由FAQ點擊我要發問之後將相關數值參數導入此處-->
+                                    <h4 class="mg10"> 提問單號 : 123456789012 </h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <!--該資料由FAQ點擊我要發問之後將相關數值參數導入此處-->
+                                    <p class="alert alert-success mg10"> 問題類型 : 會員帳號問題 </p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <!--該資料由FAQ點擊我要發問之後將相關數值參數導入此處-->
+                                    <p class="alert alert-success mg10"> 問題狀況 : 帳號無法登入 </p>
+                                </div>
+                                <div class="col-sm-12 ">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default">
+                                            <div align="center"> <a role="button" DATA-TOGGLE="collapse" DATA-PARENT="#accordion" href="#collapseOne" aria-expanded="ture" aria-controls="collapseOne" class="btn btn-info"> <i class="fa fa-angle-down"></i> 展開提問內容 </a> </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body alert-info">
+
+                                                    <!--紀錄資料開始-->
+
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 遊戲 :</p>
+                                                        <p class="alert mg10"> RO仙境傳說：復興 </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 伺服器 :</p>
+                                                        <p class="alert mg10"> 開天1服 </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 角色 :</p>
+                                                        <p class="alert mg10"> 會叫的豬沒咬人 </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 問題發生日期 :</p>
+                                                        <p class="alert mg10"> 2017-1-1 02:00~03:59 </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 手機號碼 :</p>
+                                                        <p class="alert mg10">台灣 +886 0917-xxxx-123 </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 電子信箱 :</p>
+                                                        <p class="alert mg10"> jason@yourweb.com </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 問題標題 :</p>
+                                                        <p class="alert mg10"> 一二三四五六七八九十一二三四五六七八九十 </p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class=" red-point-no-small"> 提問時間 :</p>
+                                                        <p class="alert mg10"> 2017-01-10 02:00:25 </p>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        <p class=" red-point-no-small"> 問題敘述:</p>
+                                                        <p class="alert mg10"> 我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯我密碼一直錯 </p>
+                                                    </div>
+                                                    <div class="col-sm-12 mgt30">
+                                                        <div class="col-sm-12">
+                                                            <p class=" red-point-no-small"> 相關圖片 :</p>
+                                                        </div>
+                                                        <div class="col-sm-2 pd20 "> <img src="images/sliderbg/image1.jpg" width="358" height="358" class="img-responsive"> </div>
+                                                        <div class="col-sm-2 pd20"> <img src="images/sliderbg/image1.jpg" width="358" height="358" class="img-responsive"> </div>
+                                                        <!--沒有上傳資料請留白 並且將 class upload-board 拿掉-->
+                                                        <div class="col-sm-2 "> </div>
+                                                        <div class="col-sm-2 "> </div>
+                                                        <div class="col-sm-2 "> </div>
+                                                        <div class="col-sm-2 "> </div>
+                                                    </div>
+
+                                                    <!--問題紀錄結束-->
+
+                                                </div>
+                                                <div align="center"> <a role="button" DATA-TOGGLE="collapse" DATA-PARENT="#accordion" href="#collapseOne" aria-controls="collapseOne" class="btn btn-info"><i class="fa fa-angle-up"></i> 關閉問題內容 </a> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--分隔線-->
+
+                                <div class="col-sm-12 pd20">
+                                    <h4 class="mgt0"> 問答紀錄 </h4>
+                                    <div class="mgb20"><span class="separator"></span> </div>
+
+                                    <!--0筆對話資料時出現以下資料 開始-->
+                                    <div class="col-sm-12" align="left">
+                                        <p class="alert-chat-left">客服人員尚未回覆。<br />
+                                    </div>
+                                    <!--0筆對話資料時出現以下資料 結束-->
+
+                                    <!--wg 回應-->
+
+                                    <div class="col-sm-12" align="left">
+                                        <div class="speech-bubble speech-bubble-left"> <span class=" alert-chat-role-red "> <i class="fa fa-user-circle fa-2x"></i> </span>
+                                            <p class="alert-chat-left"> 我們已經進行調查 , 一旦有任何結果會立即通知您! <br />
+                                                <span><i class="fa fa-clock-o"></i> 2016/11/01 20:15</span></p>
+                                        </div>
+                                    </div>
+
+                                    <!--用戶回應--->
+
+                                    <div class="col-sm-12" align="right">
+                                        <div class="speech-bubble speech-bubble-right" align="right">
+                                            <span class=" alert-chat-role-black "> <i class="fa fa-user-circle fa-2x"></i> </span>
+
+                                            <p class="alert-chat-right mgb20"> 時間過了很久了耶! 時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!時間過了很久了耶!<br>
+                                                <img src="images/sliderbg/image1.jpg" class=" icon-svg-h2"> <img src="images/sliderbg/image1.jpg" class=" icon-svg-h2">
+                                                <br /><span><i class="fa fa-clock-o"></i> 2016/11/01 23:45</span> </p>
+                                        </div>
+
+                                    </div>
+
+                                    <!--wg 回應-->
+
+                                    <div class="col-sm-12" align="left">
+                                        <div class="speech-bubble speech-bubble-left"> <span class=" alert-chat-role-red "> <i class="fa fa-user-circle fa-2x"></i> </span>
+                                            <p class="alert-chat-left"> 感謝您等候，已為您排除登入問題囉！<br />
+                                                <span><i class="fa fa-clock-o"></i> 2016/11/01 23:15</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--發話輸入框 發問規格請參考企畫資料說明-->
+                                <div class="col-sm-12 pd20">
+                                    <label for="name" class="red-point-no"> 繼續提問：</label>
+                                    <!-- 解除鎖定時 只要把 readonly 拿掉就好 -->
+                                    <textarea name="name" placeholder="客服人員將儘速為您處理問題，敬請耐心稍候。" rows="5" class="input-name form-control" readonly></textarea>
+                                </div>
+                                <!-- 解除鎖定時 只要把 class 的 disabled 拿掉就好 -->
+                                <div class="col-sm-12 mgt30" align="center">
+
+
+                                    <!--已經上傳的預覽-->
+                                    <link href="https://resource.test.wegames.com.tw/libs/webuploader/uploader.css" rel="stylesheet">
+                                    <div class="col-xs-12" id="uploader">
+                                        <div class="queueList">
+                                            <div id="dndArea" class="placeholder">
+                                                <div id="filePicker" class="webuploader-container">
+                                                    <div class="webuploader-pick">
+                                                        點擊選擇圖片(單張圖片限5M)
+                                                    </div>
+                                                    <div id="rt_rt_1c0o0953l168tbejh7811tb5gp1" style="position: absolute; top: 70px; left: 65.063px; width: 269px; height: 40px; overflow: hidden; bottom: auto; right: auto;"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div>
+                                                </div>
+                                                <p>或將圖片拖放到這裡，限2張</p>
+                                            </div>
+                                            <ul class="filelist"></ul>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="statusBar">
+                                            <div class="progress col-xs-12 col-sm-5" style="display: none;">
+                                                <span class="text">0%</span>
+                                                <span class="percentage" style="width: 0%;"></span>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-2 pull-right btns">
+                                                <span id="filePicker2" class="webuploader-container">
+                                                    <div class="webuploader-pick">繼續添加</div>
+                                                    <div id="rt_rt_1c0o0953n15mp2uvnge11pfm3p6" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; overflow: hidden;"><input type="file" name="file" class="webuploader-element-invisible" multiple="multiple" accept="image/*"><label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label></div>
+                                                </span>
+                                            </div>
+                                            <div class="info col-xs-12 col-sm-5 pull-right">共0張（0B），已上傳0張</div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-xs-12" align="center">
+                                        <a role="button" class="btn btn-info btn-lg mgt30 mgb30"> 送出提問內容 </a>
+                                    </div>
+
+                                </div>
+                                <!--客服問答 結束-->
+                                <div class="clearfix"></div>
+                                <!--分隔線-->
+                                <div class="col-sm-12 new-hr"></div>
+
+                                <!--問卷調查 for『案件的處理方式與處理結果』 (待選狀態)-->
+
+                                <div class="col-sm-12 pd20">
+                                    <h4 class="mgt0 font-600"> 滿意度調查</h4>
+                                    <p>針對此次提問處理，邀請您進行以下兩項目評分，將做為提升服務品質的重要參考依據，送出後即無法再修正唷！
+
+                                        感謝您的協助，祝您有個美好的一天！</p>
+                                    <p>關於本次『案件的處理方式與處理結果』，您覺得：</p>
+                                    <div class="col-sm-12 feed mt-5">
+                                        <a class="col-xs aw_open aw_close" id="p-1" role="button" data-class="feedface_perfect" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">非常滿意</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-2" role="button" data-class="feedface_great" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">很滿意</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-3" role="button" data-class="feedface_good" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">滿意</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-4" role="button" data-class="feedface_okay" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">普通</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-5" role="button" data-class="feedface_terrible" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">有待加強</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--問卷調查 結束-->
+                                <!--問卷調查 for Customer service (待選狀態)-->
+
+                                <div class="col-sm-12 pd20">
+                                    <p>關於本次『服務人員的服務效率與回覆』，您覺得：</p>
+                                    <div class="col-sm-12  feed_service mt-5">
+                                        <a class="col-xs aw_open aw_close" id="p-1" role="button" data-class="feedface_perfect" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">非常滿意</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-2" role="button" data-class="feedface_great" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">很滿意</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-3" role="button" data-class="feedface_good" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">滿意</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-4" role="button" data-class="feedface_okay" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">普通</span>
+                                        </a>
+                                        <a class="col-xs aw_open aw_close" id="p-5" role="button" data-class="feedface_terrible" data-id="poll_alert" DATA-X="center" DATA-Y="middle" DATA-COLOR-OVERLAY="aw_overlay_black">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">有待加強</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--問卷調查 結束-->
+                                <div class="col-xs-12" align="center">
+                                        <a role="button" class="btn btn-info btn-lg mgt30 mgb30 pl-20 pr-20" disabled> 確認  <!--（未選擇評分狀態）--></a>
+                                        <a role="button" class="btn btn-info btn-lg mgt30 mgb30 pl-20 pr-20"> 確認 </a>
+                                    </div>
+                                <!--問卷調查 (已選狀態)-->
+                                <div class="col-sm-12 pd20">
+                                    <h4 class="mgt0 font-600"> 滿意度調查</h4>
+                                    <p> 針對此次提問客服人員為您服務的滿意度評分，將做為提升服務品質的重要參考依據，感謝您的協助！</p>
+                                    <p>關於本次『案件的處理方式與處理結果』，您覺得：</p>
+                                    <!-- 以下選定之後將 class btn-default  換成 btn-info-->
+                                    <div class="col-sm-12  feed-finish mt-5">
+                                        <a class="col-sm">
+                                            <div class="feed_pic selected_pic"></div>
+                                            <span href="" class="mt-2">非常滿意</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">很滿意</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">滿意</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">普通</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">有待加強</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--問卷調查 結束-->
+                                <!--問卷調查 for Customer service (已選狀態)-->
+                                <div class="col-sm-12 pd20">
+                                    <p>關於本次『服務人員的服務效率與回覆』，您覺得：</p>
+                                    <!-- 以下選定之後將 class btn-default  換成 btn-info-->
+                                    <div class="col-sm-12  feed-finish mt-5">
+                                        <a class="col-sm">
+                                            <div class="feed_pic selected_pic"></div>
+                                            <span href="" class="mt-2">非常滿意</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">很滿意</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">滿意</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">普通</span>
+                                        </a>
+                                        <a class="col-sm">
+                                            <div class="feed_pic"></div>
+                                            <span href="" class="mt-2">有待加強</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--問卷調查 結束-->
+                                <!--問卷調查 (已經超過時效)-->
+                                <div class="col-sm-12 pd20">
+                                    <h4 class="mgt0 font-600"> 滿意度調查</h4>
+                                    <p> 針對此次提問客服人員為您服務的滿意度評分，將做為提升服務品質的重要參考依據，感謝您的協助！</p>
+                                    <p class="red-point-no">已超過評分時效，無法評分</p>
+                                </div>
+
+                                <!--問卷調查 結束-->
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--輸入區 end-->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--新增的底部連結-->
+    <div class="bottom-xs-links visible-xs">
+        <div class="col-xs-3 pd10"> <a href="about.html" class=" btn btn-xs btn-success">關於WG</a> </div>
+        <div class="col-xs-3 pd10"> <a href="terms.html" class=" btn btn-xs btn-success">會員條款</a> </div>
+        <div class="col-xs-3 pd10"> <a href="policy.html" class=" btn btn-xs btn-success">隱私權政策</a> </div>
+        <div class="col-xs-3 pd10"> <a href="mailto:wegamesbiz@wegames.com.tw" class=" btn btn-xs btn-success" target="_blank">商務合作</a> </div>
+        <div class="col-xs-3 pd10"> <a href="http://www.wegames.biz/" class=" btn btn-xs btn-success" target="_blank">企業官網</a></div>
+        <div class="col-xs-3 pd10"> <a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" class=" btn btn-xs btn-success" target="_blank">人才招募</a> </div>
+        <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Facebook</a> </div>
+        <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Youtube</a> </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--問卷調查提示 start-->
+    <div id="aw_overlay" class="aw_overlay"></div>
+    <div class="aw_popup" id="poll_alert" DATA-SHOW-EFFECT="jumpIn" DATA-HIDE-EFFECT="zoomOut"> 　 　
+        <div class="aw_popup_layout animated"> 　　
+            <div class="material_alert material_alert_danger" role="alert"> 　　　　
+                <div class="text-center feedface">
+                    <div class=""></div>
+                    <h4 class="text-white">確定送出評分嗎？ </h4>
+                    <a class="btn btn-info btn-lg mr-05" href="shop-thankyou.html"> 確定 </a> <a class="btn btn-info btn-lg aw_close" role="button"> 取消 </a>
+                </div>
+                <span class="text-yellow"> <span class="aw_close_icon aw_close">+</span> 　 </span></div>
+        </div>
+    </div>
+    <!--問卷調查提示  end-->
+    <!--內容區結束-->
+
+    <!-- Footer -->
+    <footer class="footer ">
+        <div class="container">
+            <div class="row pd015">
+                <div class="col-sm-6 hidden-xs ">
+                    <div class="footer-info footernav02">
+                        <h3>遊戲介紹</h3>
+                        <div class="col-xs-6 ">
+                            <ul class="ourservices">
+                                <li><a href="#">霹靂江湖</a></li>
+                                <li><a href="#">霹靂無敵</a></li>
+                                <li><a href="#">三國戰記OL</a></li>
+                                <li><a href="#">星之島喵喵</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 ">
+                            <ul class="ourservices">
+                                <li><a href="#">戰爭學院</a></li>
+                                <li><a href="#">女神18</a></li>
+                                <li><a href="#">古龍群俠傳</a></li>
+                                <li><a href="#">角頭</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 hidden-xs ">
+                    <div class="footer-info footernav02">
+                        <div class="col-sm-6">
+                            <h3>關注WG</h3>
+                            <ul class="followus">
+                                <li><a href="#">Facebook</a></li>
+                                <li><a href="#">Youtube</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>相關資訊</h3>
+                            <ul class="followus">
+                                <li><a href="about.html">關於WG</a></li>
+                                <li><a href="terms.html">會員條款</a></li>
+                                <li><a href="policy.html">隱私權政策</a></li>
+                                <li><a href="mailto:wegamesbiz@wegames.com.tw" target="_blank">商務合作</a></li>
+                                <li><a href="http://www.wegames.biz/" target="_blank">企業官網</a></li>
+                                <li><a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" target="_blank">人才招募</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- /.container -->
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="copyright text-center">唯數娛樂 版權所有 ⓒ WeGames Corporation. All Rights Reserved</p>
+                    </div>
+                    <!-- /.col-md-10 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+        </div>
+    </footer>
+    <!--回到頂部按鈕-->
+    <div><a href="#" class="scrollup">Scroll</a></div>
+    <!-- Javascript -->
+    <script src="javascript/jquery.min.2.2.4.js"></script>
+    <script type="text/javascript" src="javascript/plugins.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <!-- 回到底部 Javascript start-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollup').fadeIn();
+                } else {
+                    $('.scrollup').fadeOut();
+                }
+            });
+            $('.scrollup').click(function() {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 600);
+                return false;
+            });
+        });
+    </script>
+    <!-- 回到底部 Javascript end -->
+    <!--連結彈出說明文字 start-->
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <!--連結彈出說明文字 end-->
+    <!--彈出視窗 JS start-->
+    <script type="text/javascript" src="javascript/animated_alert.min.js"></script>
+    <script>
+        $(function() {
+            $('.feed a').on('click', function() {
+                var $that = $(this);
+                var $thatPic = $that.find('.feed_pic');
+                var $all_feedpic = $('.feed .feed_pic');
+                $all_feedpic.removeClass('feed-checked');
+                $thatPic.addClass('feed-checked');
+
+            })
+        })
+        $(function() {
+            $('.feed_service a').on('click', function() {
+                var $that = $(this);
+                var $thatPic = $that.find('.feed_pic');
+                var $all_service_feedpic = $('.feed_service .feed_pic');
+                $all_service_feedpic.removeClass('feed-checked');
+                $thatPic.addClass('feed-checked');
+
+            })
+        })
+    </script>
+    <script>
+        /*(function($){
+
+	$(".aw_open").on("click",function(event){
+	
+		event.preventDefault();
+
+		$(this).animatedAlert({
+			containerAlert: $("#" + $(this).attr("data-id")),
+			axisX: $(this).attr("data-x"),
+			coordinateX: $(this).attr("data-coordinate-x"),
+			coordinateY: $(this).attr("data-coordinate-y"),
+			axisY: $(this).attr("data-y"),
+			autoClose: $(this).attr("data-auto-close"),
+			delayClose: $(this).attr("data-delay-close"),
+			colorOverlay: $(this).attr("data-color-overlay")
+		});
+	});
+	
+	$(".aw_close").on("click",function(){
+		var aw_active = $(this).parents(".aw_active");
+		aw_active.attr({"data-hide-overlay": "true"});
+		$(this).animatedAlert("closeAlert", aw_active);
+	});
+	
+})*/
+        /*(jQuery);*/
+        /*
+        $('.feed a').on('click',function(){
+            var $that = $(this);
+            var $thatClass = $that.data('class');
+            var $thatfeedface = $('.feedface div');
+            $thatfeedface.attr('class',$thatClass);
+        })
+        */
+
+
+        /*  $('.feed a').on('click',function(){
+             
+             var $that = $(this);
+             var $thatId = $that.attr('id');
+             var $thatPic = $that.find('.feed_pic');
+             var $thatfeedface = $('.feedface');
+             
+            switch ($thatId){
+                case 'p-1' :
+                    $thatfeedface.attr('src','images/feed-perfect.svg');
+                    break;
+                case 'p-2' :
+                    $thatfeedface.attr('src','images/feed-great.svg');
+                    break;
+                case 'p-3' :
+                    $thatfeedface.attr('src','images/feed-good.svg');
+                    break;
+                case 'p-4' :
+                    $thatfeedface.attr('src','images/feed-okay.svg');
+                    break;
+                case 'p-5' :
+                    $thatfeedface.attr('src','images/feed-terrible.svg');
+                    break;
+                    
+                    
+            } 
+         });*/
+    </script>
+    <!--彈出視窗 JS end-->
+</body></html>

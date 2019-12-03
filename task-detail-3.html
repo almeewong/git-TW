@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WG會員平台歡迎您</title>
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!--共用CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- 流星動畫背景-->
+<link rel="stylesheet" type="text/css" href="stylesheets/bg20170125-stars.css"  />
+<!--共用CSS-->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/sprite-icon-ui.css" />
+<!-- ico 圖示-->
+<link href="images/common/favicon.ico" rel="shortcut icon" />
+</head>
+
+<body class="left-sidebar">
+<!-- Preloader -->
+<div class="preloader">
+  <div class="clear-loading loading-effect-2"> <span></span> </div>
+</div>
+
+<!-- Header --> 
+<!-- Header Div 未登入 start-->
+<header id="header" class="header header-sticky"> 
+  <!--固定頂部位置 CSS class header-sticky-->
+  <div class="header-wrap ">
+    <div class="header-nav">
+      <div class="container">
+        <div class="row" >
+          <div class=" col-sm-2 col-lg-2 col-xs-8"> <a href="index.html" rel="home" ><img src="images/icon/logo-red.svg" class="logo-fix"  /></a> </div>
+          <!--手機版選單 開始-->
+          <div class=" col-sm-10 col-lg-10 col-xs-4" align="right" >
+            <div class="btn-menu"></div>
+            <nav id="mainnav" class="mainnav">
+              <ul class="menu">
+                <!--已登入 -->
+                <li class="visible-xs visible-sm red"><a href="payment-step1.html">儲值</a></li>
+                <li class="cs"><a href="faq.html">客服中心</a> </li>
+                <li class="news"><a href="news-list.html">最新消息</a> </li>
+                <li class="taskli"><a href="task-home.html">平台任務</a> </li>
+                <li class="pointshop"><a href="shop-list.html">紅利商城</a> </li>
+                <li class="games"><a href="game-center.html">遊戲大廳</a> </li>
+                <li class="visible-xs"><a href="login.html">會員專區</a></li>
+                <!--登入之後的按鈕-->
+                <li class="member mega hidden-xs hidden-sm "><a href="edit-account.html">會員 
+                  <!-- 有提示時顯示下面資料訊 開始--> 
+                  
+                  <!-- 有提示時顯示下面資料訊 結束--> 
+                  </a></li>
+                <li class="hidden-xs payment" ><a href="payment-step1.html"> 儲值 </a> </li>
+                <!--登入之後的按鈕 結束-->
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!--MEGA 下拉顯示DIV 開始 狀況說明 : 只有登入會員之後才會出現此區塊 -->
+      <div class="mega-wrap hidden-xs">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2"  > <img src="images/icon/member-v0-unknow.png" class="img-circle member-svg" /> </div>
+            <div class="col-sm-4" >
+              <p class="text-white"> 12345678978abc , 您好</p>
+              <div class="task__text member-task" > 會員等級: <span class="text-yellow"> 超級會員</span> <br />
+                紅利點數 : <span class="text-yellow"> 123456 </span> <i class="wg-ui wg-red-point-small"></i> <a href="about-red-point.html" class="btn btn-xs  btn-black"><i class="fa fa-question-circle"></i> 紅利說明 </a></div>
+              <br />
+              <span class="text-white"> （最近紅利到期日:2017/08/28） </span> </div>
+            <div class="col-sm-2" >
+              <div >
+                <ul >
+                  <!--狀況說明 : 提示資料大於1-9筆-->
+                  <li><a href="edit-account.html">會員專區 </a></li>
+                  <!--狀況說明 : 等級不足時出現的情況-->
+                  <li><a href="binding.html" DATA-TOGGLE="tooltip" DATA-PLACEMENT="top" title="綁定會員帳號即可開通">儲值紀錄 <i class="wg-ui wg-lock"></i> </a> </li>
+                  <!--狀況說明 : 提示資料大於10筆以上-->
+                  <li><a href="game-log.html">遊戲履歷 <span class="circle">9+</span> </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2" >
+              <div >
+                <ul >
+                  <li><a href="point-list-get.html">紅利紀錄 </a></li>
+                  <li><a href="request-list.html">客服紀錄 <span class="circle">9+</span> </a></li>
+                  <li><a href="frined-binding.html">邀請好友 </a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-2" >
+              <div >
+                <ul >
+                  <li><a href="logout.html">會員登出</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Header Div 未登入 End --> 
+<!-- /.header -->
+
+<section class="breadcrumb-wrap" >
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text"> <i class="wegames-title wegames-task"></i><br>
+          <ul class="breadcrumb hidden-xs">
+            <li><a href="index.html">首頁</a></li>
+            <li class="last"><a href="task-home.html">平台任務</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <img src="images/task-detail-banner.jpg" class="img-responsive hidden-xs">
+<section class="page-wrap">
+  <div class="container" >
+  <div class="row">
+    <div class="content">
+        <!--訊息 start-->
+        <div class="col-xs-12">
+          <div class="col-xs-12">
+            <h3 class="bold pd10">RO仙境傳說：口袋冒險 </h3>
+          </div>
+          <div class="col-xs-6">
+          <div class="pdl20">
+
+            <p>總紅利 <span class="red-point-no"> 1234567</span> <i class=" wg-ui wg-red-point-xs"></i> </p>
+            <p>已獲得 <span class="red-point-no"> 1234567</span> <i class=" wg-ui wg-red-point-xs"></i> </p>
+            <p>完成度 <span class="red-point-no"> 49 </span> / 50 </p>
+            </div>
+          </div>
+          <div class="col-xs-6" align="right"> <a href="task-home.html" class="btn btn-info mg10">任務主頁</a>
+                        <a href="point-list-get.html" class="btn btn-info mg10">紅利紀錄</a>
+          </div>
+                   
+        </div>
+        <!--訊息 end--> 
+        
+        <!--分頁頁籤  start-->
+        <div class="col-xs-12 pd10">
+      
+           <a href="task-detail-1.html" class="btn btn-lg btn-success mgt10 mgb10 "> <i class="fa fa-angle-right"></i> 新手任務 </a> <a href="task-detail-2.html" class="btn btn-lg btn-success mgt10 mgb10 "> <i class="fa fa-angle-right"></i> 進階任務 </a> <a href="task-detail-3.html" class="btn btn-lg btn-success mgt10 mgb10 disabled"> <i class="fa fa-angle-right"></i> 特別任務 </a>
+       
+        </div>
+        <!--分頁頁籤  end--> 
+        
+        <!-- 任務內容 start -->
+        <div class="col-xs-12" >
+          <!--任務項目 已完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-home-bg bg-danger">
+                <h4 class="bold">首隻角色創建</h4>
+                <h2 class="red-point-h2"> + 5 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+               <h4 class="bold mgb20"> 2017-06-16 完成</h4></div>
+            </div>
+            
+            <!--任務項目 未完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-detail-bg-active ">
+                <h4 class="bold">連續1日登入遊戲</h4>
+                <h2 class="red-point-h2"> + 10 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+                <a class=" aw_open aw_close btn btn-primary" data-id="guest_task_alert" DATA-X="center" DATA-Y="middle" role="button" DATA-COLOR-OVERLAY="aw_overlay_black" >如何完成? </a> </div>
+            </div>
+            
+            
+            <!--任務項目 未完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-detail-bg-active ">
+                <h4 class="bold">連續3日登入遊戲</h4>
+                <h2 class="red-point-h2"> + 20 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+                <a class=" aw_open aw_close btn btn-primary" data-id="guest_task_alert" DATA-X="center" DATA-Y="middle" role="button" DATA-COLOR-OVERLAY="aw_overlay_black" >如何完成? </a> </div>
+            </div>
+            
+             <!--任務項目 已完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-home-bg bg-danger">
+                <h4 class="bold">首隻角色創建</h4>
+                <h2 class="red-point-h2"> + 5 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+              <h4 class="bold mgb20"> 2017-06-16 完成</h4></div>
+            </div>
+            
+            <!--任務項目 未完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-detail-bg-active ">
+                <h4 class="bold">連續1日登入遊戲</h4>
+                <h2 class="red-point-h2"> + 10 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+                <a class=" aw_open aw_close btn btn-primary" data-id="guest_task_alert" DATA-X="center" DATA-Y="middle" role="button" DATA-COLOR-OVERLAY="aw_overlay_black" >如何完成? </a> </div>
+            </div>
+            
+            
+            <!--任務項目 未完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-detail-bg-active ">
+                <h4 class="bold">連續3日登入遊戲</h4>
+                <h2 class="red-point-h2"> + 20 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+                <a class=" aw_open aw_close btn btn-primary" data-id="guest_task_alert" DATA-X="center" DATA-Y="middle" role="button" DATA-COLOR-OVERLAY="aw_overlay_black" >如何完成? </a> </div>
+            </div>
+            
+             <!--任務項目 已完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-home-bg bg-danger">
+                <h4 class="bold">首隻角色創建</h4>
+                <h2 class="red-point-h2"> + 5 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+              <h4 class="bold mgb20"> 2017-06-16 完成</h4></div>
+            </div>
+            
+            <!--任務項目 未完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-detail-bg-active ">
+                <h4 class="bold">連續1日登入遊戲</h4>
+                <h2 class="red-point-h2"> + 10 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+                <a class=" aw_open aw_close btn btn-primary" data-id="guest_task_alert" DATA-X="center" DATA-Y="middle" role="button" DATA-COLOR-OVERLAY="aw_overlay_black" >如何完成? </a> </div>
+            </div>
+            
+            
+ <!--任務項目 已完成-->
+            <div class="col-sm-4 col-xs-12" align="center"  >
+              <div class=" radius-task-home-bg bg-danger">
+                <h4 class="bold">首隻角色創建</h4>
+                <h2 class="red-point-h2"> + 5 <i class=" wg-ui wg-red-point-xs"></i> </h2>
+               <h4 class="bold mgb20"> 2017-06-16 完成</h4></div>
+            </div>           
+            
+            
+          <div class="clearfix"></div>
+        </div>
+        <!-- 任務內容 結束--> 
+        
+       <!--注意事項-->
+              <div class="clearfix"></div>
+              <div class="col-sm-12 pd20">
+                <p>注意事項：<br />
+                 • 完成上述任務獲得之紅利點數可至紅利商城兌換商品<br>
+• 紅利點數自完成任務後系統發送當日生效，有效期限為領取日起算6個月後（ 詳見 <a href="#"> 紅利點數說明 </a>）<br>
+• 因累計有效儲值達標完成升等任務後，如因申請退款致未達標，系統將自動扣還已發送之紅利點數，並自動降等，且視為已完成升等任務，不再重複發送點數<br>
+• 上述「有效儲值金額」條件定義：儲值成功且未經退款<br>
+• 所有任務執行完成狀態以該任務上線日後起算，不予以回溯<br>
+                </p>
+              </div>
+              
+        </div>
+     
+      <div class="clearfix mgb10"></div>
+    </div>
+    
+  </div>
+</section>
+   <!--新增的底部連結-->
+    <div class="bottom-xs-links visible-xs">
+      <div class="col-xs-3 pd10"> <a href="about.html" class=" btn btn-xs btn-success">關於WG</a> </div>
+      <div class="col-xs-3 pd10"> <a href="terms.html" class=" btn btn-xs btn-success">會員條款</a> </div>
+      <div class="col-xs-3 pd10"> <a href="policy.html" class=" btn btn-xs btn-success">隱私權政策</a> </div>
+      <div class="col-xs-3 pd10"> <a href="mailto:wegamesbiz@wegames.com.tw" class=" btn btn-xs btn-success" target="_blank">商務合作</a> </div>
+      <div class="col-xs-3 pd10"> <a href="http://www.wegames.biz/"  class=" btn btn-xs btn-success" target="_blank">企業官網</a></div>
+      <div class="col-xs-3 pd10"> <a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" class=" btn btn-xs btn-success" target="_blank">人才招募</a> </div>
+      <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Facebook</a> </div>
+      <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Youtube</a> </div>
+      <div class="clearfix"></div>
+    </div>
+                <!--新手任務提示 start-->
+              <div id="aw_overlay" class="aw_overlay"></div>
+              <div class="aw_popup" id="guest_task_alert" DATA-SHOW-EFFECT="jumpIn" DATA-HIDE-EFFECT="zoomOut"> 　 　
+                <div class="aw_popup_layout animated"> 　　
+                  <div class="material_alert material_alert_danger" role="alert"> 　　　　
+                    <div class="text-center">
+                      <h4 class="text-white">連續3日登入遊戲！</h4>
+                      <p>任務方式：連續3日開啟遊戲，以會員帳號登入後，持續於遊戲中操作10分鐘以上。</p>
+                      <p>任務進度：已連續2日</p>
+                      <p>參與頻率：僅限一次</p>
+                      <a class="btn btn-info btn-lg" href="https://ror.gnjoy.com.tw/event_checkin" > 前往遊戲官網 </a> </div>
+                    <span class="aw_close_icon aw_close">+</span> 　　　</div>
+                </div>
+              </div>
+              <!--新手任務提示  end-->               
+ 
+<!-- Footer -->
+<footer class="footer ">
+  <div class="container" >
+    <div class="row pd015">
+      <div class="col-sm-6 hidden-xs ">
+        <div class="footer-info footernav02">
+          <h3>遊戲介紹</h3>
+          <div class="col-xs-6 ">
+            <ul class="ourservices">
+              <li><a href="#">霹靂江湖</a></li>
+              <li><a href="#">霹靂無敵</a></li>
+              <li><a href="#">三國戰記OL</a></li>
+              <li><a href="#">星之島喵喵</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 ">
+            <ul class="ourservices">
+              <li><a href="#">戰爭學院</a></li>
+              <li><a href="#">女神18</a></li>
+              <li><a href="#">古龍群俠傳</a></li>
+              <li><a href="#">角頭</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs ">
+        <div class="footer-info footernav02">
+          <div class="col-sm-6">
+            <h3>關注WG</h3>
+            <ul class="followus">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h3>相關資訊</h3>
+            <ul class="followus">
+              <li><a href="about.html">關於WG</a></li>
+              <li><a href="terms.html">會員條款</a></li>
+              <li><a href="policy.html">隱私權政策</a></li>
+              <li><a href="mailto:wegamesbiz@wegames.com.tw" target="_blank">商務合作</a></li>
+              <li><a href="http://www.wegames.biz/" target="_blank">企業官網</a></li>
+              <li><a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" target="_blank">人才招募</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row --> 
+  
+  <!-- /.container -->
+  <div class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="copyright text-center" >唯數娛樂 版權所有 ⓒ WeGames Corporation. All Rights Reserved</p>
+        </div>
+        <!-- /.col-md-10 --> 
+        
+      </div>
+      <!-- /.row --> 
+    </div>
+  </div>
+</footer>
+<!--回到頂部按鈕-->
+<div><a href="#" class="scrollup">Scroll</a></div>
+<!-- Javascript --> 
+<script src="javascript/jquery.min.2.2.4.js"></script> 
+<script type="text/javascript" src="javascript/plugins.js"></script> 
+<script type="text/javascript" src="javascript/main.js"></script> 
+
+<!-- 回到底部 Javascript start--> 
+<script type="text/javascript">
+    $(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+	$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+    });
+    </script> 
+<!-- 回到底部 Javascript end --> 
+<!--彈出視窗 JS start-->
+<script type="text/javascript" src="javascript/animated_alert.min.js"></script> <script>
+(function($){
+
+	$(".aw_open").on("click",function(event){
+	
+		event.preventDefault();
+
+		$(this).animatedAlert({
+			containerAlert: $("#" + $(this).attr("data-id")),
+			axisX: $(this).attr("data-x"),
+			coordinateX: $(this).attr("data-coordinate-x"),
+			coordinateY: $(this).attr("data-coordinate-y"),
+			axisY: $(this).attr("data-y"),
+			autoClose: $(this).attr("data-auto-close"),
+			delayClose: $(this).attr("data-delay-close"),
+			colorOverlay: $(this).attr("data-color-overlay")
+		});
+	});
+	
+	$(".aw_close").on("click",function(){
+		var aw_active = $(this).parents(".aw_active");
+		aw_active.attr({"data-hide-overlay": "true"});
+		$(this).animatedAlert("closeAlert", aw_active);
+	});
+	
+})(jQuery);
+</script> 
+<!--彈出視窗 JS end--> 
+
+<!--連結彈出說明文字 start--> 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script> 
+<!--連結彈出說明文字 end-->
+</body>
+</html>

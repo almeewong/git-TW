@@ -1,0 +1,22 @@
+/////// 此修正已經已經在 V6 的所有 HTML進行測試通過 , 如果有任何問題可以參考http://v6.wegames.site/的預覽頁面! /////////
+
+
+
+1. 將 bottom-xs-links 的 <div> 統一寫法為 :
+////// 注意 : 如果有任何多餘的程式碼 / CSS / DIV , 請一律用下面的程式碼替換!////////
+
+    <div class="bottom-xs-links visible-xs">
+      <div class="col-xs-3 pd10"> <a href="about.html" class=" btn btn-xs btn-success">關於WG</a> </div>
+      <div class="col-xs-3 pd10"> <a href="terms.html" class=" btn btn-xs btn-success">會員條款</a> </div>
+      <div class="col-xs-3 pd10"> <a href="policy.html" class=" btn btn-xs btn-success">隱私權政策</a> </div>
+      <div class="col-xs-3 pd10"> <a href="mailto:wegamesbiz@wegames.com.tw" class=" btn btn-xs btn-success" target="_blank">商務合作</a> </div>
+      <div class="col-xs-3 pd10"> <a href="http://www.wegames.biz/"  class=" btn btn-xs btn-success" target="_blank">企業官網</a></div>
+      <div class="col-xs-3 pd10"> <a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" class=" btn btn-xs btn-success" target="_blank">人才招募</a> </div>
+      <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Facebook</a> </div>
+      <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Youtube</a> </div>
+      <div class="clearfix"></div>
+    </div>
+
+2. 更換  stylesheets/ 底下 的 style.css 與 responsive.css 兩隻檔案
+
+3. 請將 bottom-xs-links 放在 <section class="page-wrap">之外 , <footer class="footer "> 之前的區塊就可以了

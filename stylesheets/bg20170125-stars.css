@@ -1,0 +1,152 @@
+/* #login_background_star {
+    background: #022436 url(../images/e_stars.png) repeat 20% 20%;
+    z-index: 1;
+    -webkit-animation: stars-anim 600s infinite linear;
+    -moz-animation: stars-anim 600s infinite linear;
+    -o-animation: stars-anim 600s infinite linear;
+    animation: stars-anim 600s infinite linear;
+    min-height:100%;
+    height:auto
+} */
+#login_background_star {
+	background-image: url(../images/pattern-bule-1.svg);
+	z-index: 1;
+    background-size: cover;
+	animation: none;
+}
+
+
+@-webkit-keyframes moon-anim {
+from {
+background-position:0 2%
+}
+to {
+	background-position: 110% 2%
+}
+}
+@-moz-keyframes moon-anim {
+from {
+background-position:0 2%
+}
+to {
+	background-position: 110% 2%
+}
+}
+@-o-keyframes moon-anim {
+from {
+background-position:0 2%
+}
+to {
+	background-position: 110% 2%
+}
+}
+@keyframes moon-anim {
+from {
+background-position:0 2%
+}
+to {
+	background-position: 110% 2%
+}
+}
+@-webkit-keyframes stars-anim {
+from {
+background-position:5% 600%
+}
+to {
+	background-position: 1300% 5%
+}
+}
+@-moz-keyframes stars-anim {
+from {
+background-position:5% 600%
+}
+to {
+	background-position: 1300% 5%
+}
+}
+@-o-keyframes stars-anim {
+from {
+background-position:5% 600%
+}
+to {
+	background-position: 1300% 5%
+}
+}
+@keyframes stars-anim {
+from {
+background-position:5% 600%
+}
+to {
+	background-position: 1300% 5%
+}
+}
+@-webkit-keyframes light {
+0% {
+opacity:.1
+}
+25% {
+opacity:.35
+}
+50% {
+opacity:.95
+}
+100% {
+opacity:.2
+}
+}
+@-moz-keyframes light {
+0% {
+opacity:.1
+}
+25% {
+opacity:.35
+}
+50% {
+opacity:.95
+}
+100% {
+opacity:.2
+}
+}
+@-o-keyframes light {
+0% {
+opacity:.1
+}
+25% {
+opacity:.35
+}
+50% {
+opacity:.95
+}
+100% {
+opacity:.2
+}
+}
+@keyframes light {
+0% {
+opacity:.1
+}
+25% {
+opacity:.35
+}
+50% {
+opacity:.95
+}
+100% {
+opacity:.2
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+#login_background_star{ background-image:url(../images/pattern-bule-1.svg); background-size:cover;
+-webkit-animation: none ;
+	-moz-animation: none ;
+	-o-animation: none;
+	animation: none}		
+}
+@media only screen and (max-width: 479px) {
+#login_background_star{ background-image:url(../images/pattern-bule-1.svg); background-size:cover;
+-webkit-animation: none ;
+	-moz-animation: none ;
+	-o-animation: none;
+	animation: none}		
+}

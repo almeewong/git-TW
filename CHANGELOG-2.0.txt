@@ -1,0 +1,98 @@
+﻿修改內容紀錄期間 2017/9/20~2017/12/15
+
+//////
+新增靜態說明頁面 :
+
+1.關於WG　　-　about.html
+2.會員條款　-　terms.html
+3.隱私權政策　-　policy.html
+4.404 - 404.html
+5.全站停機公告　-　announcement.html
+6.紅利點數說明　-　about-red-point.html
+7.分享邀請碼　-　fb-share.html
+8.什麼是邀請碼　-　about-invite.html
+9.好友綁定空白頁面 - friend-binding-no-binding.html
+
+
+//////
+頁面編碼修改 :
+
+1. 所有頁面主選單會員按鈕旁添加小紅點的提示功能, "<a href="edit-account.html">會員 " 替換成 " <a href="edit-account.html">會員<span class="circle_top"></span> "- index.html 與 相關其他主選單頁面
+
+2. 紅利商成相關頁面 :  將 wg-icon-no 相關的class (例如 :  wg-v0-icon wg-icon-no ) 替換成 ( wg-icon-a ) 即可 , 注意:  wg-icon-no 全面可能有其他不同的等級 icon 圖示, 需一起替換掉才能正常顯示! - shop-list.html
+
+3. 好友綁定頁面 : 輸入框把原本六個框框改成一條長框 (讓用戶可以一次將號碼複製貼上) "<h4>輸入好友的邀請碼 ：</h4>
+                  <div class="col-sm-2 col-xs-2">
+                    <input type="text" maxlength="1" />
+                  </div>
+                  <div class="col-sm-2 col-xs-2">
+                    <input type="text" maxlength="1"/>
+                  </div>
+                  <div class="col-sm-2 col-xs-2">
+                    <input type="text" maxlength="1"/>
+                  </div>
+                  <div class="col-sm-2 col-xs-2">
+                    <input type="text" maxlength="1"/>
+                  </div>
+                  <div class="col-sm-2 col-xs-2">
+                    <input type="text" maxlength="1"/>
+                  </div>
+                  <div class="col-sm-2 col-xs-2">
+                    <input type="text" maxlength="1"/>
+                  </div>" 
+
+替換成
+
+	     	  <div class="col-sm-12">
+                  <input type="text">
+                  </div>                             - frined-binding.html / 
+
+
+4. 原"（<i class="wg-ui wg-red-point-small-date"></i> 紅利到期日：2017/08/28）"全替換成 "（最近紅利到期日：2017/08/28）" - 所有相關 HTML 
+
+5. 原" 紅利紅利: <span class="text-yellow"> 123456 </span> <i class="wg-ui wg-red-point-small"></i>" 全部替換成 "紅利點數: <span class="text-yellow"> 123456 </span> <i class="wg-ui wg-red-point-small"></i>"- 所有相關 HTML 
+
+6.目前頁面上還有 "demo_button" class , 請一起拿掉 -  task-detail-2.html / task-detail-3.html / task-detail-sp.html
+
+7. 請在客服與用戶回應對話中增加圖片縮圖 與 附加圖片功能 - request-detail.html (詳情請參考檔案內容)
+
+
+//////
+
+修改與新增的圖片 / js / css 統計紀錄 : 
+
+images/404.jpg
+images/fb-share-1.jpg
+images/fb-share-2.jpg
+images/fb-share-3.jpg
+images/invite-mobile.ai.svg
+images/invite-pc.ai.svg
+images/member-talbe.png
+images/wegames-icon-ui.png
+
+images/icon/member-rule-1.svg
+images/icon/member-rule-2.svg
+images/icon/member-rule-3.svg
+images/icon/member-rule-4.svg
+images/icon/member-rule-5.svg
+images/icon/member-rule-6.svg
+images/icon/member-v1-unknow.png
+
+stylesheets/responsive.css
+stylesheets/sprite-icon-ui.css
+stylesheets/style.css
+
+javascript/main.js
+javascript/plugins.js
+
+替換的內容說明 : 
+
+1. 主選單在RWD狀態下無法固定在畫面的上方 - main.js / plugins.js
+2. 紅利商品列表頁面的會員等級 icon 圖片更換 (不滿足等級者出現一個新的禁止 icon ) - sprite-icon-ui.css / style.css /responsive.css
+3. 修正 Light box 特效在手機端的顯示延遲的問題 - main.js / plugins.js /  sprite-icon-ui.css / style.css /responsive.css
+4. 會員等級長條圖片與 會員等級大頭圖片上的圖示錯置
+
+///////////
+
+
+

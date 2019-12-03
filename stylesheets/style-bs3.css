@@ -1,0 +1,52 @@
+/* for bootstrap3 */
+
+/*-------- for feed 未選擇前 --------*/
+.feed a{
+    margin-top: 20px; 
+    width: calc(100%/5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.feed a span{
+    margin-top: 8px;
+    color:#656565;
+}
+.feed{
+    display: flex;
+}
+/*-------- for feed 未選擇前 for service--------*/
+.feed_service a{
+    margin-top: 20px; 
+    width: calc(100%/5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.feed_service a span{
+    margin-top: 8px;
+    color:#656565;
+}
+.feed_service{
+    display: flex;
+}
+
+/*-------- for feed 選擇確認後 --------*/
+
+.feed-finish a{
+    margin-top: 20px; 
+    width: calc(100%/5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.feed-finish a span{
+    margin-top: 8px;
+    color:#656565;
+}
+.feed-finish{
+    display: flex;
+}

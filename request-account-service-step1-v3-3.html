@@ -1,0 +1,512 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WG會員平台歡迎您</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<!-- Mobile Specific Metas -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!--共用CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--共用CSS-->
+<link rel="stylesheet" href="https://resource.wegames.com.tw/libs/webuploader/webuploader.css">
+<link rel="stylesheet" href="https://resource.wegames.com.tw/libs/webuploader/uploader.css">
+<!--自定義圖片確認表單特效-->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/sprite-icon-ui.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/uploader.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/radiocheck.min.css" />
+<!-- ico 圖示-->
+<link href="images/common/favicon.ico" rel="shortcut icon" />
+<!-- 為上傳區塊寫上隱藏 -->
+</head>
+
+<body class="left-sidebar">
+<!-- Preloader -->
+<div class="preloader">
+  <div class="clear-loading loading-effect-2"> <span></span> </div>
+</div>
+
+<!-- Header --> 
+<!-- Header Div 未登入 start-->
+<header id="header" class="header header-sticky"> 
+  <!--固定頂部位置 CSS class header-sticky-->
+  <div class="header-wrap ">
+    <div class="header-nav">
+      <div class="container">
+        <div class="row" >
+          <div class="col-sm-2 col-xs-8"> <a href="index.html" rel="home" ><img src="images/icon/logo-red.svg" class="logo-fix"  /></a> </div>
+          <!--手機版選單 開始-->
+          <div class=" col-sm-10 col-xs-4" align="right" >
+            <div class="btn-menu"></div>
+            <nav id="mainnav" class="mainnav">
+              <ul class="menu">
+                <li class="red loginli"><a href="login.html"> 登入 </a></li>
+                <li class="red payment"><a href="login.html">儲值</a> </li>
+                <li class="red register"><a href="register.html" >註冊</a> </li>
+                <li class="cs"><a href="faq.html">客服中心</a> </li>
+                <li class="news"><a href="news-list.html">最新消息</a> </li>
+                <li class="taskli"><a href="task-home.html">平台任務</a> </li>
+                <li class="pointshop"><a href="shop-list.html">紅利商城</a> </li>
+                <li class="games"><a href="game-center.html">遊戲大廳</a> </li>
+                <li class="visible-xs"><a href="login.html">會員專區</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Header Div 未登入 End --> 
+<!-- /.header --> 
+<!--內容區開始-->
+
+<section class="breadcrumb-wrap">
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="text"> <i class="wegames-title wegames-faq"></i><br>
+          <ul class="breadcrumb hidden-xs">
+            <li><a href="index.html">首頁</a></li>
+            <li class="last"><a href="faq.html">客服中心 FAQ</a></li>
+            <li class="last"><a href="#">帳號 / 密碼重置申請
+</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="page-wrap">
+  <div class="container password-apply" >
+    <div class="row">
+      <div class="content"> 
+        <!-- 點選紀錄 開始 透過FAQ點擊我要提問的時候 , 自動將問題種類跟次分類自動載進來 -->
+        <div class="col-sm-12 pd10">
+          <h2>帳號 / 密碼重置申請</h2>
+          <div class="col-sm-12 pd10">
+            <h4 class="font15">若您的帳號已完成手機、電子信箱驗證，可以透過<a href="https://member.wegames.com.tw/site/forgot-password" target="_blank" class="btn btn-info">忘記密碼</a> 功能，重新設置密碼，快速又方便！</h4>
+            <h4 class="font15">若您依舊無法登入會員平台，請您詳實填妥下方表格，將會有客服人員竭力為您服務。<br>
+              提醒您，為確保您未來能便捷的使用本平台服務，您所填具的用戶資訊，將會更新至您的帳號之中，屆時請您務必完成相關資料驗證並儲存。<br>
+              帳號已完成實名驗證，但與您檢附證件不相符者，將無法提供進一步協助；其餘請詳見注意事項說明。 </h4>
+          </div>
+          <div class=" new-hr" ></div>
+        </div>
+        <!-- 點選紀錄 結束 --> 
+        
+        <!--分隔線--> 
+        <!--填寫內容-->
+        <div class="col-sm-12 pd10">
+          <div class="h3 mar0">遊戲角色資訊</div>
+          <form  class="requestform" >
+            <div class="col-sm-12" > 
+              <!--修改-->
+              <label for="" > 會員類型</label>
+              <div class="col-sm-2">
+                <input  type="radio" class="radiocheck" name="checkbox" id="checkboxa" />
+                <label class="nofull big left" for="checkboxa"> Facebook帳號</label>
+              </div>
+              <div class="col-sm-2">
+                <input  type="radio" class="radiocheck" name="checkbox" id="checkboxb" />
+                <label class="nofull big left" for="checkboxb"> Google帳號 </label>
+              </div>
+			  <div class="col-sm-2">
+                <input  type="radio" class="radiocheck" name="checkbox" id="checkboxd" />
+                <label class="nofull big left" for="checkboxd"> Line帳號 </label>
+              </div>
+              <div class="col-sm-2">
+                <input  type="radio" class="radiocheck" name="checkbox" id="checkboxc" />
+                <label class="nofull big left" for="checkboxc"> Wegames 帳號 </label>
+              </div>
+              <div class="col-sm-4">
+                <input  type="text" id="account-input" placeholder="輸入Wegames帳號"  />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <label for="" > 遊戲名稱 </label>
+              <select name="" required="required">
+                <option>請選擇遊戲</option>
+                <option> 鬥牛 </option>
+                <option> RO仙境傳說：復興 </option>
+                <option> 三國戰紀OL </option>
+                <option> 霹靂無敵 </option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <label for="" > 伺服器 </label>
+              <select name="" required="required">
+                <option>選擇伺服器</option>
+                <option> 1服 </option>
+                <option> 2服 </option>
+              </select>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6">
+              <label for="" > 角色名稱 </label>
+              <input type="text"  name="" required>
+            </div>
+            <div class="col-sm-6" >
+              <label for="" > 角色創立時間</label>
+              <input type="date"  name="" required>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-3">
+              <label for="" > 最後登入時間</label>
+              <input type="date"  name="" required>
+            </div>
+            <div class="col-sm-3">
+              <label for="" > &nbsp;</label>
+              <select name="" required="required">
+                <option>選擇時間區間</option>
+                <option> 00:00~01:59</option>
+                <option> 02:00~03:59</option>
+                <option> 04:00~05:59</option>
+              </select>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12">
+              <div class="col-sm-12">
+                <label for="" > 儲值與否</label>
+                <div class="col-sm-5">
+                  <input  type="radio" class="radiocheck" name="checkbox" id="checkbox" />
+                  <label class="nofull big left" for="checkbox">否,未曾儲值,請提供第二證件圖片佐證</label>
+                </div>
+                <div class="col-sm-7">
+                  <input  type="radio" class="radiocheck" name="checkbox" id="checkbox2" />
+                  <label class="nofull big left flot" for="checkbox2"> 有,曾經儲值過,請提供最近一筆儲值訂單截圖 </label>
+                  <div class="pop-up" data-toggle="modal" data-target="#myModal">儲值訂單截圖範例</div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                  <div class="modal-dialog"> 
+                    
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">儲值訂單截圖範例</h4>
+                      </div>
+                      <div class="modal-body"> 
+					  	<h3 class="popuph4">Apple Store (iOS)</h3>
+						<img src="images/example01.jpg">
+						<h3 class="pd10 popuph4">Google Play (Android)</h3>
+						<img src="images/example02.jpg">
+						<h3 class="pd10 popuph4">MyCard點卡儲值小白單</h3>
+						<img src="images/example04.jpg">
+					  </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 uploader" id="uploader">
+                  <div class="queueList">
+                    <div id="dndArea" class="placeholder">
+                      <div id="filePicker" class="webuploader-container">
+                        <div class="webuploader-pick"> 點擊選擇圖片(單張圖片限2M) </div>
+                        <div id="rt_rt_1cbbaf5ea1p1f1mjnfp91s771s951" style="position: absolute; top: 70px; left: 40.563px; width: 268px; height: 30px; overflow: hidden; bottom: auto; right: auto;">
+                          <input type="file" name="file" class="webuploader-element-invisible" multiple accept="image/*">
+                          <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                        </div>
+                      </div>
+                      <p>或將圖片拖放到這裡，限1張</p>
+                    </div>
+                    <ul class="filelist">
+                    </ul>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="statusBar">
+                    <div class="progress col-xs-12 col-sm-5" style="display: none;"> <span class="text">0%</span> <span class="percentage" style="width: 0%;"></span> </div>
+                    <div class="col-xs-12 col-sm-2 pull-right btns"> <span id="filePicker2" class="webuploader-container">
+                      <div class="webuploader-pick">繼續添加</div>
+                      <div id="rt_rt_1cbbaf5ee1apqtct1hg2169713im6" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; overflow: hidden;">
+                        <input type="file" name="file" class="webuploader-element-invisible" multiple accept="image/*">
+                        <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                      </div>
+                      </span> </div>
+                    <div class="info col-xs-12 col-sm-5 pull-right">共0張（0B），已上傳0張</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <h4 class="mgt20">用戶補充描述 <span class="font16">(請補充其他相關資訊，以利處理人員更加完整了解您的需要)</span></h4>
+              </div>
+              <div class="col-sm-12">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="ex：為何需要申請本服務？"></textarea>
+              </div>
+              <div class="h3">用戶資訊<span class="font16">（以下資料經核實後將更新至您的帳號） </span></div>
+              <div class="col-sm-6">
+                <label for="" > 真實姓名 </label>
+                <input type="text" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="" >身分證後五碼 </label>
+                <input type="text" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="" > 性別 </label>
+                <select name="" required="required">
+                  <option> 請選擇性別 </option>
+                  <option> 男 </option>
+                  <option> 女 </option>
+                </select>
+              </div>
+              <div class="col-sm-6">
+                <label for="">生日</label>
+                <input type="date" name="" required="">
+              </div>
+              <div class="col-sm-6" >
+                <label for="" >手機號碼</label>
+                <input type="text" required  placeholder="請輸入未認證過的手機號碼 " />
+              </div>
+              <div class="col-sm-6" >
+                <label for="" > 電子信箱 </label>
+                <input type="email" name="" placeholder="請輸入未認證過的電子信箱" required />
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-sm-12">
+                <h4 class="mgt20">上傳身分證明圖檔</h4>
+              </div>
+              <div class="col-sm-12">
+                <div class="col-sm-12">
+                  <ul class="red-point-no-small pdl20 pdr20">
+                    <li> 帳號持有人請提供身分證正反面，外籍人士請提供護照個人資料頁。</li>
+                    <li> 未滿20歲之帳號持有人若無身分證，可提供健保卡正面（需有本人照片）或提供戶口名簿（需有全戶資料，且戶籍地址及戶號需清晰可識，並皆已簽名與蓋章）。</li>
+                    <li> 未滿20歲之帳號持有人除本人證件外，另需附上法定代理人的身分證正反面。</li>
+                    <li> 僅受理彩色正本證件拍照或掃描，如為影本、不完整、有塗改或刻意遮蔽則無法受理。</li>
+                  </ul>
+                </div>
+                <div class="col-sm-12" >
+                  <div class="col-xs-12 uploader " id="uploader">
+                    <div class="queueList">
+                      <div id="dndArea" class="placeholder">
+                        <div id="filePicker" class="webuploader-container">
+                          <div class="webuploader-pick"> 點擊選擇圖片(單張圖片限2M) </div>
+                          <div id="rt_rt_1cbbaf5ea1p1f1mjnfp91s771s951" style="position: absolute; top: 70px; left: 40.563px; width: 268px; height: 30px; overflow: hidden; bottom: auto; right: auto;">
+                            <input type="file" name="file" class="webuploader-element-invisible" multiple accept="image/*">
+                            <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                          </div>
+                        </div>
+                        <p>或將圖片拖放到這裡，限5張</p>
+                      </div>
+                      <ul class="filelist">
+                      </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="statusBar">
+                      <div class="progress col-xs-12 col-sm-5" style="display: none;"> <span class="text">0%</span> <span class="percentage" style="width: 0%;"></span> </div>
+                      <div class="col-xs-12 col-sm-2 pull-right btns"> <span id="filePicker2" class="webuploader-container">
+                        <div class="webuploader-pick">繼續添加</div>
+                        <div id="rt_rt_1cbbaf5ee1apqtct1hg2169713im6" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; overflow: hidden;">
+                          <input type="file" name="file" class="webuploader-element-invisible" multiple accept="image/*">
+                          <label style="opacity: 0; width: 100%; height: 100%; display: block; cursor: pointer; background: rgb(255, 255, 255);"></label>
+                        </div>
+                        </span> </div>
+                      <div class="info col-xs-12 col-sm-5 pull-right">共0張（0B），已上傳0張</div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <input type="checkbox"/>
+                    本人願擔保不會持該遊戲帳號從事轉讓、交易、買賣。</div>
+                  <div class="col-sm-12">
+                    <input  type="checkbox"/>
+                    本人茲為向唯數娛樂科技股份有限公司（下稱唯數娛樂公司）以切結方式「遊戲帳號為本人所有及會員內容修正」。本人（下稱申請人）同意並願意遵守以下各點，絕無異議：
+                    <p class="bg-box clearfix">茲本人於 2018 年 04 月 12 日向唯數娛樂公司提出遊戲帳號內容異動設定，並同意唯數娛樂公司更改本人帳號設定。今本人特立此切結書保證該遊戲帳號為本人所有，如有陳述虛偽不實，本人願承擔偽造文書等相關刑法罪責，並且對於唯數娛樂公司為本人帳號封鎖或帳號內物品之所有處置，絕無異議；且若有他人對於遊戲帳號有所異議，並確認為他人所有時，本人除同意歸還及賠償該遊戲帳號，且回復其內全數物品狀態，並願意負擔其遊戲帳號所招致之任何相關損害賠償以及法律責任，此皆概與唯數娛樂公司無涉，如有造成唯數娛樂公司損失（包含但不限於訴訟費、律師費），本人亦願負責賠償。</p>
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-12"> <span class="clearfix"> <strong>注意事項</strong></span>
+                    <ul class="pdl20 pdr20">
+                      <li> 客服中心在收到您的資料後，並且核對資料無誤後，將會於7-14個工作天內（不包含例假日）為您辦理相關業務。</li>
+                      <li> 本公司之服務只能協助進行密碼變更，無法為您查詢到您自行預設的密碼。</li>
+                      <li> 為了保障您的帳號角色安全，未能附上完整相關文件本公司恕不予受理。</li>
+                      <li>您提供的身分證明圖檔僅供本公司本次帳號密碼重設服務身分查核使用，不另作他用。</li>
+                      <li>唯數娛樂科技股份有限公司保留隨時變更或終止本表格程序及最終核發與否之權利。 </li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-12 mgt30 mgb30" align="center">
+                    <div class="red-point-no-small pd10 center-fix"><i class="wg-ui wg-no-small"></i> 請勾選上述擔保／切結說明事項 </div>
+                    <div class="red-point-no-small pd10 center-fix"><i class="wg-ui wg-no-small"></i> 請上傳儲值訂單截圖</div>
+                    <div class="red-point-no-small pd10 center-fix"><i class="wg-ui wg-no-small"></i> 請上傳身分證明圖檔 </div>
+                    <div class="clearfix"></div>
+                    <!-- 送出成功之後前往 thank you page -  thankyou.html --> 
+                    <a href="request-account-service-thankyou.html"  class="btn btn-info pdl50 pdr50 ">送出申請</a> </div>
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="clearfix mgb10"></div>
+    </div>
+  </div>
+</section>
+<!--新增的底部連結-->
+<div class="bottom-xs-links visible-xs">
+  <div class="col-xs-3 pd10"> <a href="about.html" class=" btn btn-xs btn-success">關於WG</a> </div>
+  <div class="col-xs-3 pd10"> <a href="terms.html" class=" btn btn-xs btn-success">會員條款</a> </div>
+  <div class="col-xs-3 pd10"> <a href="policy.html" class=" btn btn-xs btn-success">隱私權政策</a> </div>
+  <div class="col-xs-3 pd10"> <a href="mailto:wegamesbiz@wegames.com.tw" class=" btn btn-xs btn-success" target="_blank">商務合作</a> </div>
+  <div class="col-xs-3 pd10"> <a href="http://www.wegames.biz/"  class=" btn btn-xs btn-success" target="_blank">企業官網</a></div>
+  <div class="col-xs-3 pd10"> <a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" class=" btn btn-xs btn-success" target="_blank">人才招募</a> </div>
+  <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Facebook</a> </div>
+  <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Youtube</a> </div>
+  <div class="clearfix"></div>
+</div>
+
+<!-- Footer -->
+<footer class="footer ">
+  <div class="container" >
+    <div class="row pd015">
+      <div class="col-sm-6 hidden-xs ">
+        <div class="footer-info footernav02">
+          <h3>遊戲介紹</h3>
+          <div class="col-xs-6 ">
+            <ul class="ourservices">
+              <li><a href="#">霹靂江湖</a></li>
+              <li><a href="#">霹靂無敵</a></li>
+              <li><a href="#">三國戰記OL</a></li>
+              <li><a href="#">星之島喵喵</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 ">
+            <ul class="ourservices">
+              <li><a href="#">戰爭學院</a></li>
+              <li><a href="#">女神18</a></li>
+              <li><a href="#">古龍群俠傳</a></li>
+              <li><a href="#">角頭</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs ">
+        <div class="footer-info footernav02">
+          <div class="col-sm-6">
+            <h3>關注WG</h3>
+            <ul class="followus">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h3>相關資訊</h3>
+            <ul class="followus">
+              <li><a href="about.html">關於WG</a></li>
+              <li><a href="terms.html">會員條款</a></li>
+              <li><a href="policy.html">隱私權政策</a></li>
+              <li><a href="mailto:wegamesbiz@wegames.com.tw" target="_blank">商務合作</a></li>
+              <li><a href="http://www.wegames.biz/" target="_blank">企業官網</a></li>
+              <li><a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" target="_blank">人才招募</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row --> 
+  
+  <!-- /.container -->
+  <div class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="copyright text-center" >唯數娛樂 版權所有 ⓒ WeGames Corporation. All Rights Reserved</p>
+        </div>
+        <!-- /.col-md-10 --> 
+        
+      </div>
+      <!-- /.row --> 
+    </div>
+  </div>
+</footer>
+<!--回到頂部按鈕-->
+<div><a href="#" class="scrollup">Scroll</a></div>
+<!-- Javascript --> 
+<script src="javascript/jquery.min.2.2.4.js"></script> 
+<script type="text/javascript" src="javascript/plugins.js"></script> 
+<script type="text/javascript" src="javascript/main.js"></script> 
+
+<!-- 回到底部 Javascript start--> 
+<script type="text/javascript">
+    $(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+	$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+    });
+    </script> 
+<!-- 回到底部 Javascript end --> 
+<!--彈出視窗 JS start--> 
+<script type="text/javascript" src="javascript/animated_alert.min.js"></script> <script>
+(function($){
+
+	$(".aw_open").on("click",function(event){
+	
+		event.preventDefault();
+
+		$(this).animatedAlert({
+			containerAlert: $("#" + $(this).attr("data-id")),
+			axisX: $(this).attr("data-x"),
+			coordinateX: $(this).attr("data-coordinate-x"),
+			coordinateY: $(this).attr("data-coordinate-y"),
+			axisY: $(this).attr("data-y"),
+			autoClose: $(this).attr("data-auto-close"),
+			delayClose: $(this).attr("data-delay-close"),
+			colorOverlay: $(this).attr("data-color-overlay")
+		});
+	});
+	
+	$(".aw_close").on("click",function(){
+		var aw_active = $(this).parents(".aw_active");
+		aw_active.attr({"data-hide-overlay": "true"});
+		$(this).animatedAlert("closeAlert", aw_active);
+	});
+	
+})(jQuery);
+</script> 
+<!--彈出視窗 JS end--> 
+
+<!--連結彈出說明文字 start--> 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script> 
+<!--連結彈出說明文字 end--> 
+
+<!--判斷是否帳號類別--> 
+<script>
+ $(document).ready(function(){
+  $("#checkboxa").click(function(){
+  $("#account-input").hide();
+  });
+  $("#checkboxb").click(function(){
+  $("#account-input").hide();
+  });
+  $("#checkboxd").click(function(){
+  $("#account-input").hide();
+  });
+  $("#checkboxc").click(function(){
+  $("#account-input").show();
+  });
+});
+</script>
+</body>
+</html>

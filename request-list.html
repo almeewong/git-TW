@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WG會員平台歡迎您</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<!-- Mobile Specific Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<!--自定義圖片確認表單特效-->
+<link rel="stylesheet" type="text/css" href="stylesheets/radiocheck.min.css" />
+<!--共用CDN-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--共用CSS-->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/responsive.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css" />
+<link rel="stylesheet" type="text/css" href="stylesheets/sprite-icon-ui.css" />
+<!-- ico 圖示-->
+<link href="images/common/favicon.ico" rel="shortcut icon" />
+</head>
+
+<body class="left-sidebar">
+<!-- Preloader -->
+<div class="preloader">
+  <div class="clear-loading loading-effect-2"> <span></span> </div>
+</div>
+
+<!-- Header --> 
+<!-- Header Div 未登入 start-->
+<header id="header" class="header header-sticky"> 
+  <!--固定頂部位置 CSS class header-sticky-->
+  <div class="header-wrap ">
+  <div class="header-nav">
+    <div class="container">
+      <div class="row" >
+        <div class=" col-sm-2 col-lg-2 col-xs-8"> <a href="index.html" rel="home" ><img src="images/icon/logo-red.svg" class="logo-fix"  /></a> </div>
+        <!--手機版選單 開始-->
+        <div class=" col-sm-10 col-lg-10 col-xs-4" align="right" >
+          <div class="btn-menu"></div>
+          <nav id="mainnav" class="mainnav">
+            <ul class="menu">
+              <!--已登入 -->
+              <li class="visible-xs visible-sm red"><a href="payment-step1.html">儲值</a></li>
+              <li class="cs"><a href="faq.html">客服中心</a> </li>
+              <li class="news"><a href="news-list.html">最新消息</a> </li>
+              <li class="taskli"><a href="task-home.html">平台任務</a> </li>
+              <li class="pointshop"><a href="shop-list.html">紅利商城</a> </li>
+              <li class="games"><a href="game-center.html">遊戲大廳</a> </li>
+              <li class="visible-xs"><a href="login.html">會員專區</a></li>
+              <!--登入之後的按鈕-->
+              <li class="member mega hidden-xs hidden-sm "><a href="edit-account.html">會員 
+                <!-- 有提示時顯示下面資料訊 開始--> 
+                
+                <!-- 有提示時顯示下面資料訊 結束--> 
+                </a></li>
+              <li class="hidden-xs payment" ><a href="payment-step1.html"> 儲值 </a> </li>
+              <!--登入之後的按鈕 結束-->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--MEGA 下拉顯示DIV 開始 狀況說明 : 只有登入會員之後才會出現此區塊 -->
+    <div class="mega-wrap hidden-xs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2"  > <img src="images/icon/member-v0-unknow.png" class="img-circle member-svg" /> </div>
+          <div class="col-sm-4" >
+            <p class="text-white"> 12345678978abc , 您好</p>
+            <div class="task__text member-task" > 會員等級: <span class="text-yellow"> 超級會員</span> <br />
+              紅利點數 : <span class="text-yellow"> 123456 </span> <i class="wg-ui wg-red-point-small"></i> <a href="about-red-point.html" class="btn btn-xs  btn-black"><i class="fa fa-question-circle"></i> 紅利說明 </a></div>
+            <br />
+            <span class="text-white"> （最近紅利到期日：2017/08/28） </span> </div>
+          <div class="col-sm-2" >
+            <div >
+              <ul >
+                <!--狀況說明 : 提示資料大於1-9筆-->
+                <li><a href="edit-account.html">會員專區 </a></li>
+                <!--狀況說明 : 等級不足時出現的情況-->
+                <li><a href="binding.html" DATA-TOGGLE="tooltip" DATA-PLACEMENT="top" title="綁定會員帳號即可開通">儲值紀錄 <i class="wg-ui wg-lock"></i> </a> </li>
+                <!--狀況說明 : 提示資料大於10筆以上-->
+                <li><a href="game-log.html">遊戲履歷 <span class="circle">9+</span> </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2" >
+            <div >
+              <ul >
+                <li><a href="point-list-get.html">紅利紀錄 </a></li>
+                <li><a href="request-list.html">客服紀錄 <span class="circle">9+</span> </a></li>
+                <li><a href="frined-binding.html">邀請好友 </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-2" >
+            <div >
+              <ul > <li><a href="logout.html">會員登出</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</header>
+
+<!-- Header Div 未登入 End --> 
+<!-- /.header --> 
+
+<!--內容區開始--> 
+<!-- 麵包屑 開始-->
+<section class="breadcrumb-wrap hidden-xs">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12"> <i class="wegames-title wegames-cs-list"></i><br>
+        <ul class="breadcrumb hidden-xs">
+          <li><a href="index.html">首頁</a></li>
+          <li class="last"><a href="request-list.html">客服紀錄</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- 麵包屑 結束-->
+
+<section class="page-wrap" >
+  <div class="container" >
+    <div class="row " >
+      <div class="col-sm-12">
+        <div class="col-sm-12 visible-xs">
+          <div class="col-lg-12 pd10 mgb20 user-info-dash">
+            <div class="col-lg-6 col-sm-6 col-xs-12" >
+              <p class="text-white"> 12345678978abc , 您好</p>
+              <div class="task__text member-task" >
+                <p>會員等級: <span class="text-yellow"> 超級會員</span> <br />
+                  紅利點數 : <span class="text-yellow"> 123456 </span> <br>
+                  紅利到期日 : <span class="text-yellow"> 2017/08/28 </span> </p>
+              </div>
+              <br>
+              <a href="about-red-point.html" class="btn btn-xs btn-info"><i class="fa fa-question-circle"></i> 紅利說明 </a> </div>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-xs-3" align="center" > <a href="edit-account.html#main" ><span class="icon-wrap navi-member"></span></a>
+            <p align="center">會員專區</p>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="game-log.html#main" ><span class="icon-wrap navi-gamelog"> </span></a>
+            <p align="center">遊戲履歷</p>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="payment-list.html#main" ><span class="icon-wrap navi-payment"></span></a>
+            <p align="center">儲值紀錄</p>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a  href="point-list-get.html#main" > <span class="icon-wrap navi-reppoint"> </span></a>
+            <p align="center">紅利紀錄 <span class="circle-gray circle-dash">9+</span> </p>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-xs-3" align="center" > <a href="request-list.html#main" ><span class="icon-wrap navi-cs"></span></a>
+            <p align="center">客服紀錄 <span class="circle-gray circle-dash">9+</span> </p>
+          </div>
+          <div class="col-lg-2 col-sm-3 col-xs-3" align="center"> <a href="frined-binding.html#main" ><span class="icon-wrap navi-invite"> </span></a>
+            <p align="center">邀請好友 <span class="circle-gray circle-dash">9+</span> </p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        
+        <!--修正結尾-->
+        
+        <div class="col-sm-12" id="main">
+          <div class="col-sm-3 col-lg-2 sidebar-nav hidden-xs">
+            <ul>
+              <li ><a href="edit-account.html">會員專區 </a></li>
+              <li ><a href="game-log.html"> 遊戲履歷 </a></li>
+              <li ><a href="payment-list.html"> 儲值紀錄 </a></li>
+              <li ><a href="point-list-get.html"> 紅利紀錄 </a></li>
+              <li ><a class="active" href="request-list.html"> 客服紀錄 </a></li>
+              <li ><a href="frined-binding.html"> 邀請好友 </a></li>
+            </ul>
+          </div>
+          <div class="col-sm-9 col-lg-10 col-xs-12"> <!--驗證資料區塊開始-->
+            <div class="col-sm-12 pd20"> 
+              
+              <!--選擇器-->
+              <div class="col-sm-12 requestform" >
+                <div class="col-sm-5">
+                  <select name="" required>
+                    <option> 最近一個月紀錄 </option>
+                    <option> 一個月以上至六個月紀錄</option>
+                  </select>
+                </div>
+                <div class="col-sm-5">
+                  <select name="" required>
+                    <option>全部遊戲</option>
+                    <option> 霹靂江湖 </option>
+                    <option> 仙境傳說RO </option>
+                    <option> 鬥牛 </option>
+                  </select>
+                </div>
+                <div class="col-sm-2"> <a href="#" class="btn btn-success btn-sm mg10"> <i class="fa fa-search"></i> 搜尋 </a> </div>
+              </div>
+              
+              <!--最近其他五筆登入紀錄-->
+              <div class="col-lg-12 col-sm-12 mgt20" >
+                <div class="new-hr"></div>
+              
+                <!--0筆資料時顯示以下資料 start-->
+                <p class="mg20 "> 總計 <span class="red-point-no"> 0 </span> 筆紀錄，顯示 0 筆紀錄</p>
+                <table class="table table-bordered mgt20 mgb20 table-responsive break-table">
+                  <tr  class="hidden-xs">
+                    <th>提問時間</th>
+                    <th>提問單號</th>
+                    <th>遊戲名稱</th>
+                    <th>伺服器</th>
+                    <th>角色</th>
+                    <th>問題標題</th>
+                    <th>狀態</th>
+                    <th>問答紀錄</th>
+                  </tr>
+                </table>
+                <!--0筆資料時顯示以下資料 end--> 
+                
+                <!--1筆資料以上時顯示以下資料 start-->
+                <p class="mg20 "> 總計 <span class="red-point-no"> 19 </span> 筆紀錄，顯示 1-5筆紀錄</p>
+                <table class="table table-bordered mgt20 mgb20 table-responsive break-table">
+                  <tr  class="hidden-xs">
+                    <th>提問時間</th>
+                    <th>提問單號</th>
+                    <th>遊戲名稱</th>
+                    <th>伺服器</th>
+                    <th>角色</th>
+                    <th>問題標題</th>
+                    <th>狀態</th>
+                    <th>問答紀錄</th>
+                  </tr>
+                  <tr>
+                    <td DATA-TITLE="提問時間">2016-12-28</td>
+                    <td DATA-TITLE="提問單號">123456789012</td>
+                    <td DATA-TITLE="遊戲名稱">RO仙境傳說：復興</td>
+                    <td DATA-TITLE="伺服器">s9-惡魔女</td>
+                    <td DATA-TITLE="角色">會叫的豬不會咬人</td>
+                    <td DATA-TITLE="問題標題">角色帳號無法登入</td>
+                    <td DATA-TITLE="狀態"><span class="text-info">待處理</span></td>
+                    <td DATA-TITLE="問答紀錄"><a href="request-detail.html" ><i class="fa fa-arrow-circle-o-right"></i> 詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td DATA-TITLE="提問時間">2016-12-28</td>
+                    <td DATA-TITLE="提問單號">123456789012</td>
+                    <td DATA-TITLE="遊戲名稱">RO仙境傳說：復興</td>
+                    <td DATA-TITLE="伺服器">s9-惡魔女</td>
+                    <td DATA-TITLE="角色">會叫的豬不會咬人</td>
+                    <td DATA-TITLE="問題標題">角色帳號無法登入</td>
+                    <td DATA-TITLE="狀態"><span class="text-success">處理中</span></td>
+                    <td DATA-TITLE="問答紀錄"><a href="request-detail.html"><i class="fa fa-arrow-circle-o-right"></i> 詳細</a></td>
+                  </tr>
+                  <tr>
+                    <td DATA-TITLE="提問時間">2016-12-28</td>
+                    <td DATA-TITLE="提問單號">123456789012</td>
+                    <td DATA-TITLE="遊戲名稱">RO仙境傳說：復興</td>
+                    <td DATA-TITLE="伺服器">s9-惡魔女</td>
+                    <td DATA-TITLE="角色">會叫的豬不會咬人</td>
+                    <td DATA-TITLE="問題標題">帳號無法登入就是無法登入啦</td>
+                    <td DATA-TITLE="狀態">已結案<br>
+                      <a href="request-detail.html" DATA-TOGGLE="tooltip" DATA-PLACEMENT="top" title="請填寫滿意度調查" class=" red-point-no-small" > <i class="fa fa-arrow-circle-o-right"></i> 滿意度調查</a></td>
+                    <td DATA-TITLE="問答紀錄"><a href="request-detail.html" ><i class="fa fa-arrow-circle-o-right"></i> 詳細 </a></td>
+                  </tr>
+                  <tr>
+                    <td DATA-TITLE="提問時間">2016-12-28</td>
+                    <td DATA-TITLE="提問單號">123456789012</td>
+                    <td DATA-TITLE="遊戲名稱">RO仙境傳說：復興</td>
+                    <td DATA-TITLE="伺服器">s9-惡魔女</td>
+                    <td DATA-TITLE="角色">會叫的豬不會咬人</td>
+                    <td DATA-TITLE="問題標題">帳號無法登入就是無法登入啦帳號</td>
+                    <td DATA-TITLE="狀態"><!--如果填寫問券時效已過--> 
+                      已結案</td>
+                    <td DATA-TITLE="問答紀錄"><a href="request-detail.html" ><i class="fa fa-arrow-circle-o-right"></i> 詳細 </a></td>
+                  </tr>
+                  <tr>
+                    <td DATA-TITLE="提問時間">2016-12-28</td>
+                    <td DATA-TITLE="提問單號">123456789012</td>
+                    <td DATA-TITLE="遊戲名稱">RO仙境傳說：復興</td>
+                    <td DATA-TITLE="伺服器">s9-惡魔女</td>
+                    <td DATA-TITLE="角色">會叫的豬不會咬人</td>
+                    <td DATA-TITLE="問題標題">帳號無法登入就是無法登入啦</td>
+                    <td DATA-TITLE="狀態"><!--如果填寫問券時效已--> 
+                      已結案 </td>
+                    <td DATA-TITLE="問答紀錄"><a href="request-detail.html" ><i class="fa fa-arrow-circle-o-right"></i> 詳細 </a></td>
+                  </tr>
+                </table>
+              </div>
+              <!--分頁 start-->
+              <div class="mgb30 center-fix text-center" > 
+                <!--PC版分頁顯示-->
+                <div class="pagination" >
+                  <ul class="inline">
+                    <!--當前分頁 用class="active"-->
+                    <li><a href="#"><i class="fa fa-angle-double-left pdl10 pdr10"></i></a></li>
+                    <li><a href="#"><i class="fa fa-angle-left  pdl10 pdr10"></i></a></li>
+                    <li class="active"><a href="#" >
+                      <p class="pdl20 pdr20">2</p>
+                      </a></li>
+                    <li><a href="#"><i class="fa fa-angle-right  pdl10 pdr10"></i></a></li>
+                    <li><a href="#"><i class="fa fa-angle-double-right  pdl10 pdr10"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              
+              <!--分頁 end-->
+              <div class="mb30">
+                <p>注意事項：</p>
+                <p>• 狀態為待處理表客服尚未回覆，狀態為處理中表客服已回覆但尚未結案<br />
+                  • 已結案的客服紀錄於結案後七日內提供滿意度調查評分，將做為提升服務品質的重要參考依據</p>
+              </div>
+            </div>
+          </div>
+          <!--驗證資料區塊 結束--> 
+        </div>
+        <!--輸入區 end--> 
+      </div>
+    </div>
+  </div>
+  
+</section>
+<!--新增的底部連結-->
+  <div class="bottom-xs-links visible-xs">
+    <div class="col-xs-3 pd10"> <a href="about.html" class=" btn btn-xs btn-success">關於WG</a> </div>
+    <div class="col-xs-3 pd10"> <a href="terms.html" class=" btn btn-xs btn-success">會員條款</a> </div>
+    <div class="col-xs-3 pd10"> <a href="policy.html" class=" btn btn-xs btn-success">隱私權政策</a> </div>
+    <div class="col-xs-3 pd10"> <a href="mailto:wegamesbiz@wegames.com.tw" class=" btn btn-xs btn-success" target="_blank">商務合作</a> </div>
+    <div class="col-xs-3 pd10"> <a href="http://www.wegames.biz/"  class=" btn btn-xs btn-success" target="_blank">企業官網</a></div>
+    <div class="col-xs-3 pd10"> <a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" class=" btn btn-xs btn-success" target="_blank">人才招募</a> </div>
+    <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Facebook</a> </div>
+    <div class="col-xs-3 pd10"> <a href="#" class=" btn btn-xs btn-success" target="_blank">Youtube</a> </div>
+    <div class="clearfix"></div>
+  </div>
+<!--內容區結束--> 
+
+<!-- Footer -->
+<footer class="footer ">
+  <div class="container" >
+    <div class="row pd015">
+      <div class="col-sm-6 hidden-xs ">
+        <div class="footer-info footernav02">
+          <h3>遊戲介紹</h3>
+          <div class="col-xs-6 ">
+            <ul class="ourservices">
+              <li><a href="#">霹靂江湖</a></li>
+              <li><a href="#">霹靂無敵</a></li>
+              <li><a href="#">三國戰記OL</a></li>
+              <li><a href="#">星之島喵喵</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-6 ">
+            <ul class="ourservices">
+              <li><a href="#">戰爭學院</a></li>
+              <li><a href="#">女神18</a></li>
+              <li><a href="#">古龍群俠傳</a></li>
+              <li><a href="#">角頭</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 hidden-xs ">
+        <div class="footer-info footernav02">
+          <div class="col-sm-6">
+            <h3>關注WG</h3>
+            <ul class="followus">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h3>相關資訊</h3>
+            <ul class="followus">
+              <li><a href="about.html">關於WG</a></li>
+              <li><a href="terms.html">會員條款</a></li>
+              <li><a href="policy.html">隱私權政策</a></li>
+              <li><a href="mailto:wegamesbiz@wegames.com.tw" target="_blank">商務合作</a></li>
+              <li><a href="http://www.wegames.biz/" target="_blank">企業官網</a></li>
+              <li><a href="https://www.104.com.tw/jobbank/custjob/index.php?r=cust&j=4339416a33353d662f313962373d3518628282825406b416795j51" target="_blank">人才招募</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.row --> 
+  
+  <!-- /.container -->
+  <div class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="copyright text-center" >唯數娛樂 版權所有 ⓒ WeGames Corporation. All Rights Reserved</p>
+        </div>
+        <!-- /.col-md-10 --> 
+        
+      </div>
+      <!-- /.row --> 
+    </div>
+  </div>
+</footer>
+<!--回到頂部按鈕-->
+<div><a href="#" class="scrollup">Scroll</a></div>
+<!-- Javascript --> 
+<script src="javascript/jquery.min.2.2.4.js"></script> 
+<script type="text/javascript" src="javascript/plugins.js"></script> 
+<script type="text/javascript" src="javascript/main.js"></script> 
+<!-- 回到底部 Javascript start--> 
+<script type="text/javascript">
+    $(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollup').fadeIn();
+		} else {
+			$('.scrollup').fadeOut();
+		}
+	});
+	$('.scrollup').click(function(){
+		$("html, body").animate({ scrollTop: 0 }, 600);
+		return false;
+	});
+    });
+    </script> 
+<!-- 回到底部 Javascript end --> 
+<!--連結彈出說明文字 start--> 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script> 
+<!--連結彈出說明文字 end-->
+</body>
+</html>

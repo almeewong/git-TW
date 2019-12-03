@@ -1,0 +1,312 @@
+.mycard_page {
+    margin: 0;
+    font-family: '微軟正黑體', 'Roboto';
+    font-size: 14px;
+    background: #333;
+}
+
+.mycard_page h3 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.mycard_page h4 {
+    color: white;
+}
+
+.mycard_page .container {
+    max-width: 970px;
+}
+
+div[class*='col-'] {
+    /*   padding: 0 30px; */
+}
+
+/* .wrap {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+} */
+
+.mycard_page a:focus,
+.mycard_page a:hover,
+.mycard_page a:active {
+    outline: 0;
+    text-decoration: none;
+}
+
+.panel {
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    background: none;
+    box-shadow: none;
+}
+
+.panel:last-child {
+    border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+    border-radius: 10px 10px 0 0;
+}
+
+.panel-group .panel {
+    border-radius: 4px 4px 0 0;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+}
+
+.panel-group .panel + .panel {
+    margin-top: 0px;
+    border-radius: 0px;
+}
+
+.panel-heading {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    padding: 0;
+}
+
+.panel-title a {
+    display: block;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.panel-body {
+    background: #fff;
+}
+
+.panel:last-child .panel-body {
+    border-radius: 0 0 10px 10px;
+}
+
+.panel:last-child .panel-heading {
+    border-radius: 0 0 10px 10px;
+    transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+    border-radius: 0;
+    transition: border-radius linear 0s;
+}
+/* #accordion r-otate icon option */
+
+#accordion .panel-heading a:before {
+    content: '\f077' !important;
+    font-weight: 900;
+    font-size: 24px;
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    right: 10px;
+    top: 10px;
+    transform: rotate(180deg) scale(.8);
+    transition: all 0.5s;
+}
+
+#accordion .panel-heading.active a:before {
+    transform: rotate(0deg) scale(.8);
+    transition: all 0.5s;
+}
+.mycard_blog-post {
+    min-height: 100vh !important;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+.mycard {
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding-bottom: 60px;
+}
+
+.mycard_btn {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 15px;
+    /* margin-top: 50px; */
+    /* box-shadow: -2px -5px 5px rgba(0, 0, 0, 0.5); */
+    /*         background-color: #fff;
+        padding-top: 20px; */
+}
+
+.mycard_btn a {
+    background-color: #a10200;
+    border: none;
+    width: 80vw;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+}
+/*未來如果沒有可以需要各別渠道調整，可以把
+cellpay
+atm_pay
+abroad_pay
+creditcard_pay  這四個CSS串合併成pay_group，因為是一樣的內容*/
+/* 
+.pay_group p{
+    font-size: 12px;
+}
+.pay_group img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.pay_group .pic_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+.cellpay .pic_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cellpay p {
+    font-size: 12px;
+}
+.cellpay img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+/* atm icon  */
+.atm_pay .pic_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.atm_pay p {
+    font-size: 12px;
+}
+
+.atm_pay img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.mycard .panel:nth-of-type(1) .store {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+/* abroad icon  */
+.abroad_pay .pic_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.abroad_pay p {
+    font-size: 12px;
+}
+
+.abroad_pay img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+/* creditcard icon  */
+.creditcard_pay .pic_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.creditcard_pay p {
+    font-size: 12px;
+}
+.creditcard_pay img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.img_focus{
+    border: 3px solid rgba(185, 0, 4, 0.5);
+    border-radius: 50%;
+     /* filter: drop-shadow(0px 0px 3px #b90004); */
+}
+.store_focus{
+    border: 3px solid #a10200;
+}
+.store {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.mycard_blog-post .mycard1-1{
+    border-radius: 10px;
+    background: #fff;
+}
+.mycard1-1 .panel-group{
+    margin-bottom: 0;
+}
+
+/* Preloader ------------------------------------------------------------- */
+.loading-container {
+    position: absolute;
+    background: rgb(48, 51, 54);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.loading {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+}
+
+.loading span {
+    background-image: url(../images/common/load-logo.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.loading-animation span {
+    -webkit-animation: mycard-sdk-loading 2s infinite linear;
+    -moz-animation: mycard-sdk-loading 2s infinite linear;
+    -o-animation: mycard-sdk-loading 2s infinite linear;
+    animation: mycard-sdk-loading 2s infinite linear;
+}
+
+@-webkit-keyframes mycard-sdk-loading {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes mycard-sdk-loading {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-o-keyframes mycard-sdk-loading {
+    from {
+        -o-transform: rotate(0deg);
+    }
+    to {
+        -o-transform: rotate(360deg);
+    }
+}
+@keyframes mycard-sdk-loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
